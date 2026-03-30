@@ -18,8 +18,8 @@ export default {
       apiError.value = "";
       try {
         const url = query
-          ? `http://localhost:5000/products?q=${encodeURIComponent(query)}`
-          : "http://localhost:5000/products";
+  ? `/products?q=${encodeURIComponent(query)}`
+  : "/products";
         const resp = await fetch(url);
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         products.value = await resp.json();
