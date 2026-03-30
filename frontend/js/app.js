@@ -1,8 +1,7 @@
 // app.js — Vue 3 root (Composition API)
 // SoleVault — Sport Shoes Catalog
 
-import AddProduct from "./components/AddProduct.js";
-import ViewProducts from "./components/ViewProducts.js";
+
 
 const { createApp, ref } = Vue;
 
