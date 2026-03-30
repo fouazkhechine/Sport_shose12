@@ -1,13 +1,10 @@
-"""
-Database connection configuration.
-Update DB_USER, DB_PASSWORD, DB_HOST, and DB_PORT to match your MySQL setup.
-"""
+import os
 
 DB_CONFIG = {
-    "host": "localhost",
-    "port": 3306,
-    "user": "root",
-    "password": "",   # <-- change this
-    "database": "sport_shoes_catalog",
-    "charset": "utf8mb4",
+    "host":     os.environ.get("DB_HOST", "localhost"),
+    "port":     int(os.environ.get("DB_PORT", 3306)),
+    "user":     os.environ.get("DB_USER", "root"),
+    "password": os.environ.get("DB_PASSWORD", ""),
+    "database": os.environ.get("DB_NAME", "sport_shoes_catalog"),
+    "charset":  "utf8mb4",
 }
