@@ -1,7 +1,7 @@
 // ViewProducts.js — Vue component for the products catalog
 // Uses jQuery for the real-time search (keyup → GET /products?q=)
 
-export default {
+window.ViewProducts  {
   name: "ViewProducts",
 
   setup() {
@@ -73,9 +73,9 @@ export default {
       return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(p);
     }
 
-    function imgFallback(e) {
-      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect fill='%230d1120' width='400' height='300'/%3E%3Ctext fill='%234a4c70' font-family='sans-serif' font-size='48' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='central'%3E👟%3C/text%3E%3C/svg%3E";
-    }
+  function imgFallback(e) {
+  e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect fill='%230d1120' width='400' height='300'/%3E%3Ctext fill='%23888' x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='48'%3E👟%3C/text%3E%3C/svg%3E";
+}
 
     // Pick a badge label based on index / price — demo heuristic
     function getBadge(product, idx) {
