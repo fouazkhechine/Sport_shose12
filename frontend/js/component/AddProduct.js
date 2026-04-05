@@ -1,7 +1,7 @@
 // AddProduct.js — Vue component for adding a new product
 // Composition API; communicates with Flask POST /products
 
-export default {
+window.AddProduct{
   name: "AddProduct",
   emits: ["product-added"],
 
