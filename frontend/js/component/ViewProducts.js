@@ -1,7 +1,7 @@
 // ViewProducts.js — Vue component for the products catalog
 // Uses jQuery for the real-time search (keyup → GET /products?q=)
 
-window.ViewProducts  {
+window.ViewProducts = {
   name: "ViewProducts",
 
   setup() {
